@@ -1,0 +1,12 @@
+data:
+  table: "raw_data"
+  data_path: "data/game.csv"
+  features_columns:
+    - "season_id"
+
+model:
+  name: "model_1"
+  type: "classification"
+  params:
+    max_iter: 100
+    random_state: 42
