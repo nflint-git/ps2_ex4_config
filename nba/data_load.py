@@ -56,7 +56,7 @@ def load_and_validate_game_data(config: Config) -> list:
     print(f"Trying to load file from: {data_path.resolve()}")
 
     # Load the CSV data
-    df = load_csv()
+    df = load_csv(data_path)
     
     # Convert each row in the DataFrame to GameData instances, validating each row
     games = []
